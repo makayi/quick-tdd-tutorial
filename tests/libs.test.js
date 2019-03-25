@@ -1,5 +1,5 @@
 const {expect} = require('chai')
-const {add,multiply,sub} = require('../libs/libs')
+const {add,multiply,sub,divide} = require('../libs/libs')
 
 describe('Libs Tests',function(){
 
@@ -16,4 +16,11 @@ describe('Libs Tests',function(){
         var product= sub(5,5);
         expect(product).to.equal(0);
 })
+
+
+it('returns result of dividing two numbers',function(){
+    var product= divide(5,5);
+    expect(product).to.equal(1);
+})
+
 })
